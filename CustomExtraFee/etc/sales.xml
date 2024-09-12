@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/sales.xsd">
+    <section name="quote">
+        <group name="totals">
+            <item name="custom_extra_fee" instance="Kitchen\CustomExtraFee\Model\Quote\CustomExtraFee" sort_order="500"/>
+            <item name="processing_fee" instance="Kitchen\CustomExtraFee\Model\Quote\ProcessingFee" sort_order="505"/>
+        </group>  
+    </section>
+    <section name="order_invoice">
+        <group name="totals">
+            <item name="customfee" instance="Kitchen\CustomExtraFee\Model\Invoice\Total\CustomFee" sort_order="160"/>
+            <item name="processing_fee" instance="Kitchen\CustomExtraFee\Model\Invoice\Total\ProcessingFee" sort_order="170"/>
+        </group>
+    </section>
+    <section name="order_creditmemo">
+        <group name="totals">
+            <item name="customfee" instance="Kitchen\CustomExtraFee\Model\Creditmemo\Total\CustomFee" sort_order="160"/>
+            <item name="processing_fee" instance="Kitchen\CustomExtraFee\Model\Creditmemo\Total\ProcessingFee" sort_order="170"/>
+        </group>
+    </section>
+</config>

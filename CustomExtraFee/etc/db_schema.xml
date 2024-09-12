@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sales_order">
+        <column xsi:type="decimal" name="custom_extra_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Extra Amount"/>
+        <column xsi:type="varchar" name="is_asembly" nullable="true" default="1" length="255" comment="Is Assembly Checkbox"/>
+        <column xsi:type="decimal" name="processing_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Processing Fee"/>
+    </table>
+    
+    <table name="quote">
+        <column xsi:type="decimal" name="custom_extra_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Extra Amount"/>
+        <column xsi:type="varchar" name="is_asembly" nullable="true" default="1" length="255" comment="Is Assembly Checkbox"/>
+        <column xsi:type="decimal" name="processing_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Processing Fee"/>
+    </table>
+    
+    <table name="sales_invoice">
+        <column xsi:type="decimal" name="custom_extra_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Extra Amount"/>
+        <column xsi:type="decimal" name="processing_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Processing Fee"/>
+    </table>
+    
+    <table name="sales_creditmemo">
+        <column xsi:type="decimal" name="custom_extra_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Extra Amount"/>
+        <column xsi:type="decimal" name="processing_fee" nullable="true" default="0.0000" scale="4" precision="20" comment="Processing Fee"/>
+    </table>
+</schema>

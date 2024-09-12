@@ -1,0 +1,8 @@
+<?php if ($block->getExtraFee()): ?>
+    <tr>
+        <td class="label"><?= $block->escapeHtml(__('Extra Amount Fee')); ?></td>
+        <td>
+            <?= $block->getCustomExtraFee(); ?>
+        </td>
+    </tr>
+<?php endif; ?>

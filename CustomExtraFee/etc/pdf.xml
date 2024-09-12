@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/pdf_file.xsd">
+    <totals>
+        <total name="custom_extra_fee">
+            <title translate="true">Custom Extra Fee</title>
+            <source_field>custom_extra_fee</source_field>
+            <font_size>7</font_size>
+            <display_zero>true</display_zero>
+            <model>Kitchen\CustomExtraFee\Model\Sales\Pdf\CustomExtraFee</model>
+            <sort_order>150</sort_order>
+        </total>
+        <total name="processing_fee">
+            <title translate="true">Processing Fee</title>
+            <source_field>processing_fee</source_field>
+            <font_size>7</font_size>
+            <display_zero>true</display_zero>
+            <model>Kitchen\CustomExtraFee\Model\Sales\Pdf\ProcessingFee</model>
+            <sort_order>160</sort_order>
+        </total>
+    </totals>
+</config>

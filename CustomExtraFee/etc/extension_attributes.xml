@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Sales\Api\Data\OrderItemInterface">
+        <attribute code="product_name" type="string"/>
+        <attribute code="assembly" type="string"/>
+        <attribute code="assembly_charges" type="float"/>
+        <attribute code="hinge" type="string"/>
+    </extension_attributes>
+</config>

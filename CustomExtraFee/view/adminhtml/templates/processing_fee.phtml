@@ -1,0 +1,8 @@
+<?php if ($block->getExtraFee()): ?>
+    <tr>
+        <td class="label"><?= $block->escapeHtml(__('Processing Fee')); ?></td>
+        <td>
+            <?= $block->getProcessingFee(); ?>
+        </td>
+    </tr>
+<?php endif; ?>

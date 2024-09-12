@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\DefaultConfigProvider">  
+        <plugin name="custom_fee" type="Kitchen\CustomExtraFee\Plugin\CustomFee" sortOrder="1" />
+    </type>
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="custom_fee_extension_attribute" type="Kitchen\CustomExtraFee\Plugin\Api\OrderRepositoryPlugin" />
+    </type>
+    <preference for="Magento\Catalog\Model\Product\Type\Price" type="Kitchen\CustomExtraFee\Model\Product\Type\Price" />
+    <!-- <type name="Magento\Sales\Controller\Adminhtml\Order\Creditmemo\UpdateQty">
+        <plugin name="updateqty_after_plugin" type="Kitchen\CustomExtraFee\Plugin\UpdateQtyPlugin" />
+    </type> -->
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="creditmemo_totals">
+            <block class="Kitchen\CustomExtraFee\Block\Adminhtml\Sales\Order\Creditmemo\Totals"
+                   name="fee" as="fee" />
+            <block class="Kitchen\CustomExtraFee\Block\Adminhtml\Sales\Order\Creditmemo\ProcessingFee"
+                   name="processing_fee" as="processing_fee" />
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,9 @@
+<!-- ko ifnot: window.checkoutConfig.custom_extra_fee == 0 || window.checkoutConfig.is_enable_fee == 0 || window.checkoutConfig.is_asembly == 0 -->
+<tr class="totals border-gray">
+    <th class="mark" colspan="1" scope="row" data-bind="text: title"></th>
+    <td class="amount">
+        <span class="price" data-bind="text: getValue()"></span>
+    </td>
+</tr>
+<!-- /ko -->
+ 
